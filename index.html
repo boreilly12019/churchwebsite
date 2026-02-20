@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>West Boca Baptist Church</title>
+    <meta name="description" content="West Boca Baptist Church - A Bible-teaching, Christ-centered, family-oriented church in Coconut Creek, FL.">
+    <link rel="stylesheet" href="/src/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  </head>
+  <body class="font-sans text-gray-800 antialiased bg-white">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+          <!-- Logo -->
+          <div class="flex-shrink-0 flex items-center">
+            <a href="#" class="flex items-center">
+              <img src="https://raw.githubusercontent.com/boreilly12019/imageschurch/refs/heads/main/qt%3Dq_95.webp" alt="West Boca Baptist Church Logo" class="h-14 w-auto">
+            </a>
+          </div>
+
+          <!-- Desktop Navigation -->
+          <nav class="hidden md:flex space-x-8 items-center">
+            <a href="#home" class="text-xs font-bold tracking-widest text-gray-600 hover:text-accent transition-colors uppercase">Home</a>
+            <a href="#about" class="text-xs font-bold tracking-widest text-gray-600 hover:text-accent transition-colors uppercase">About</a>
+            <a href="#services" class="text-xs font-bold tracking-widest text-gray-600 hover:text-accent transition-colors uppercase">Services</a>
+            <a href="#gallery" class="text-xs font-bold tracking-widest text-gray-600 hover:text-accent transition-colors uppercase">Gallery</a>
+            <a href="#giving" class="text-xs font-bold tracking-widest text-gray-600 hover:text-accent transition-colors uppercase">Giving</a>
+            <a href="#contact" class="text-xs font-bold tracking-widest text-gray-600 hover:text-accent transition-colors uppercase">Contact</a>
+            <a href="#visit" class="bg-accent hover:bg-accent-hover text-white text-sm px-6 py-2 rounded-full font-medium transition-colors shadow-md hover:shadow-lg transform hover:-translate-y-0.5 duration-200">Visit Us</a>
+          </nav>
+
+          <!-- Mobile Menu Button -->
+          <div class="md:hidden flex items-center">
+            <button id="menu-btn" class="text-gray-600 hover:text-gray-900 focus:outline-none p-2">
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-lg">
+        <div class="px-4 pt-2 pb-6 space-y-2">
+          <a href="#home" class="block px-3 py-3 text-sm font-bold tracking-widest text-gray-700 hover:text-accent hover:bg-gray-50 rounded-md uppercase">Home</a>
+          <a href="#about" class="block px-3 py-3 text-sm font-bold tracking-widest text-gray-700 hover:text-accent hover:bg-gray-50 rounded-md uppercase">About</a>
+          <a href="#services" class="block px-3 py-3 text-sm font-bold tracking-widest text-gray-700 hover:text-accent hover:bg-gray-50 rounded-md uppercase">Services</a>
+          <a href="#gallery" class="block px-3 py-3 text-sm font-bold tracking-widest text-gray-700 hover:text-accent hover:bg-gray-50 rounded-md uppercase">Gallery</a>
+          <a href="#giving" class="block px-3 py-3 text-sm font-bold tracking-widest text-gray-700 hover:text-accent hover:bg-gray-50 rounded-md uppercase">Giving</a>
+          <a href="#contact" class="block px-3 py-3 text-sm font-bold tracking-widest text-gray-700 hover:text-accent hover:bg-gray-50 rounded-md uppercase">Contact</a>
+          <a href="#visit" class="block px-3 py-3 text-base font-medium text-white bg-accent rounded-md mt-4 text-center">Visit Us</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="px-4 py-6 sm:px-6 lg:px-8 bg-white">
+        <div class="relative h-[85vh] min-h-[600px] rounded-[2.5rem] overflow-hidden shadow-2xl">
+          <!-- Background Image -->
+          <div class="absolute inset-0 z-0">
+            <img src="https://raw.githubusercontent.com/boreilly12019/imageschurch/refs/heads/main/top%20photo.jpg" alt="Pastor preaching" class="w-full h-full object-cover object-top">
+            <!-- Gradient Overlay - Darker at bottom/left -->
+            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-transparent to-transparent"></div>
+          </div>
+
+          <div class="relative z-10 h-full flex flex-col justify-end pb-16 pl-8 md:pl-16 max-w-4xl">
+            <h1 class="text-5xl md:text-6xl lg:text-7xl font-serif text-white mb-2 tracking-tight leading-tight">
+              Join us this Sunday
+            </h1>
+            <p class="text-3xl md:text-4xl font-serif italic text-[#8c8673] mb-12">Jesus is Lord!</p>
+            
+            <!-- Info Row -->
+            <div class="flex flex-col md:flex-row gap-8 md:gap-16 mb-10">
+              <!-- Time -->
+              <div class="flex items-center gap-4">
+                <div class="w-10 h-10 rounded-xl bg-white/10 backdrop-blur-md flex items-center justify-center border border-white/10">
+                   <svg class="w-5 h-5 text-white/80" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                   </svg>
+                </div>
+                <div>
+                  <p class="text-white font-medium text-lg leading-none mb-1">9:30 am Bible Study</p>
+                  <p class="text-white/60 text-sm font-light">11:00 am for Worship</p>
+                </div>
+              </div>
+
+              <!-- Location -->
+              <div class="flex items-center gap-4">
+                <div class="w-10 h-10 rounded-xl bg-white/10 backdrop-blur-md flex items-center justify-center border border-white/10">
+                   <svg class="w-5 h-5 text-white/80" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                   </svg>
+                </div>
+                <div>
+                  <p class="text-white font-medium text-lg leading-none mb-1">7500 North State Road 7</p>
+                  <p class="text-white/60 text-sm font-light italic">Coconut Creek, FL 33037</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Button -->
+            <div>
+              <a href="#contact" class="inline-flex items-center gap-3 bg-[#6b705c] hover:bg-[#585c4b] text-white px-8 py-3.5 rounded-full font-medium text-base transition-all shadow-lg hover:shadow-xl">
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+                Get Involved
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mission / About Section -->
+      <section id="about" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid lg:grid-cols-2 gap-16 items-start">
+            <!-- Left Content -->
+            <div>
+              <p class="text-xs font-bold tracking-widest text-gray-500 uppercase mb-4">Our Mission</p>
+              <h2 class="text-4xl md:text-5xl font-serif text-gray-900 mb-8 leading-tight">
+                To connect people with Jesus, strengthen families, and make disciples.
+              </h2>
+              <p class="text-lg text-gray-600 leading-relaxed mb-8">
+                We affirm that West Boca Baptist Church holds to the historic Baptist faith and doctrine, grounded in the Holy Scriptures, and aligned with orthodox evangelical and Baptist beliefs.
+              </p>
+              
+              <!-- Quote Box -->
+              <div class="bg-beige-light p-8 rounded-3xl border border-gray-100">
+                <p class="text-xl font-serif italic text-gray-700 mb-4 leading-relaxed">
+                  "If you confess with your mouth, 'Jesus is Lord,' and believe in your heart that God raised him from the dead, you will be saved."
+                </p>
+                <p class="text-xs font-bold tracking-widest text-gray-500 uppercase">Romans 10:9 (CSB)</p>
+              </div>
+            </div>
+
+            <!-- Right Cards -->
+            <div class="space-y-6">
+              <!-- Card 1 -->
+              <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                <div class="w-10 h-10 mb-4 text-accent">
+                  <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                  </svg>
+                </div>
+                <h3 class="text-2xl font-serif text-gray-900 mb-2">Connect</h3>
+                <p class="text-gray-600">Connecting people with Jesus through authentic worship and community.</p>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                <div class="w-10 h-10 mb-4 text-accent">
+                  <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                  </svg>
+                </div>
+                <h3 class="text-2xl font-serif text-gray-900 mb-2">Strengthen</h3>
+                <p class="text-gray-600">Strengthening families by providing biblical guidance and support for all ages.</p>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                <div class="w-10 h-10 mb-4 text-accent">
+                  <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                  </svg>
+                </div>
+                <h3 class="text-2xl font-serif text-gray-900 mb-2">Disciple</h3>
+                <p class="text-gray-600">Making disciples who are grounded in the Holy Scriptures and Baptist faith.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section id="services" class="py-24 bg-beige-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <p class="text-xs font-bold tracking-widest text-gray-500 uppercase mb-4">Join Us</p>
+            <h2 class="text-4xl md:text-5xl font-serif text-gray-900">Sunday Services</h2>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <!-- Sunday Card 1 -->
+            <div class="bg-white p-10 rounded-[2rem] shadow-sm flex items-start gap-8 hover:shadow-md transition-shadow">
+              <div class="flex-shrink-0 bg-beige-light w-16 h-16 rounded-full flex items-center justify-center text-accent">
+                <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div>
+                <span class="block font-bold text-gray-600 text-sm uppercase tracking-wide mb-1">9:30 AM</span>
+                <h3 class="text-3xl font-serif text-gray-900 mb-3">Bible Study</h3>
+                <p class="text-gray-600 leading-relaxed">Deep dive into the Word of God for all age groups.</p>
+              </div>
+            </div>
+
+            <!-- Sunday Card 2 -->
+            <div class="bg-white p-10 rounded-[2rem] shadow-sm flex items-start gap-8 hover:shadow-md transition-shadow">
+              <div class="flex-shrink-0 bg-beige-light w-16 h-16 rounded-full flex items-center justify-center text-accent">
+                <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div>
+                <span class="block font-bold text-gray-600 text-sm uppercase tracking-wide mb-1">11:00 AM</span>
+                <h3 class="text-3xl font-serif text-gray-900 mb-3">Worship Service</h3>
+                <p class="text-gray-600 leading-relaxed">A time of praise, prayer, and biblical teaching.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Find Us Section -->
+      <section id="location" class="py-24 bg-beige-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="bg-accent rounded-[2rem] p-8 md:p-16 text-white grid lg:grid-cols-2 gap-12 items-center shadow-xl">
+            <!-- Left Info -->
+            <div>
+              <h2 class="text-3xl md:text-4xl font-serif mb-8">Find Us in Coconut Creek</h2>
+              
+              <div class="space-y-8 mb-10">
+                <div class="flex items-start gap-4">
+                  <svg class="w-6 h-6 mt-1 text-white/80" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                  <div>
+                    <h3 class="text-xl font-serif mb-1">7500 North State Road 7</h3>
+                    <p class="text-white/80">Coconut Creek, FL 33073</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                  <svg class="w-6 h-6 mt-1 text-white/80" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                  <div>
+                    <h3 class="text-xl font-serif mb-1">Every Sunday</h3>
+                    <p class="text-white/80">Bible Study & Worship</p>
+                  </div>
+                </div>
+              </div>
+
+              <a href="https://maps.google.com" target="_blank" class="inline-block bg-white text-accent hover:bg-gray-100 px-8 py-3 rounded-full font-medium transition-colors shadow-md">
+                Get Directions
+              </a>
+            </div>
+
+            <!-- Right Map -->
+            <div class="rounded-2xl overflow-hidden shadow-lg border-4 border-white/20 h-80 lg:h-96 relative">
+              <iframe 
+                width="100%" 
+                height="100%" 
+                id="gmap_canvas" 
+                src="https://maps.google.com/maps?q=7500+North+State+Road+7,+Coconut+Creek,+FL+33073&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                frameborder="0" 
+                scrolling="no" 
+                marginheight="0" 
+                marginwidth="0">
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery Section -->
+      <section id="gallery" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 class="text-4xl md:text-5xl font-serif text-center text-gray-900 mb-8 tracking-tight">Moments of Faith: Our Church in Pictures</h2>
+          
+          <!-- Main Display -->
+          <div class="relative w-full h-[500px] md:h-[600px] flex items-center justify-center mb-6 group">
+             <img id="gallery-main-image" src="https://raw.githubusercontent.com/boreilly12019/imageschurch/refs/heads/main/1.jpg" alt="Gallery Main" class="w-full h-full object-contain rounded-lg drop-shadow-2xl transition-opacity duration-500">
+             
+             <!-- Navigation Arrows (Overlay) -->
+             <button id="main-prev" class="absolute left-0 md:left-4 top-1/2 -translate-y-1/2 bg-black/20 hover:bg-black/50 text-white p-3 rounded-full backdrop-blur-sm transition-all opacity-0 group-hover:opacity-100">
+                <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
+             </button>
+             <button id="main-next" class="absolute right-0 md:right-4 top-1/2 -translate-y-1/2 bg-black/20 hover:bg-black/50 text-white p-3 rounded-full backdrop-blur-sm transition-all opacity-0 group-hover:opacity-100">
+                <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+             </button>
+          </div>
+
+          <!-- Thumbnails -->
+          <div class="relative px-8">
+              <button id="thumb-prev" class="absolute left-0 top-1/2 -translate-y-1/2 z-10 p-1 text-gray-700 hover:text-black transition-colors">
+                  <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
+              </button>
+              
+              <div id="thumbnails-track" class="flex gap-3 overflow-x-auto pb-2 scrollbar-hide snap-x scroll-smooth">
+                  <!-- Thumbnails will be injected by JS -->
+              </div>
+
+              <button id="thumb-next" class="absolute right-0 top-1/2 -translate-y-1/2 z-10 p-1 text-gray-700 hover:text-black transition-colors">
+                  <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+              </button>
+          </div>
+        </div>
+
+        <script>
+          document.addEventListener('DOMContentLoaded', () => {
+            const images = [
+                "https://raw.githubusercontent.com/boreilly12019/imageschurch/refs/heads/main/1.jpg",
+                "https://raw.githubusercontent.com/boreilly12019/imageschurch/refs/heads/main/2.jpg",
+                "https://raw.githubusercontent.com/boreilly12019/imageschurch/refs/heads/main/3.jpg",
+                "https://raw.githubusercontent.com/boreilly12019/imageschurch/refs/heads/main/4.jpg",
+                "https://raw.githubusercontent.com/boreilly12019/imageschurch/refs/heads/main/5.jpg",
+                "https://raw.githubusercontent.com/boreilly12019/imageschurch/refs/heads/main/6.jpg",
+                "https://raw.githubusercontent.com/boreilly12019/imageschurch/refs/heads/main/7.jpg",
+                "https://raw.githubusercontent.com/boreilly12019/imageschurch/refs/heads/main/8.jpg",
+                "https://raw.githubusercontent.com/boreilly12019/imageschurch/refs/heads/main/9.jpg",
+                "https://raw.githubusercontent.com/boreilly12019/imageschurch/refs/heads/main/10.jpg",
+                "https://raw.githubusercontent.com/boreilly12019/imageschurch/refs/heads/main/11.jpg",
+                "https://raw.githubusercontent.com/boreilly12019/imageschurch/refs/heads/main/12.jpg",
+                "https://raw.githubusercontent.com/boreilly12019/imageschurch/refs/heads/main/13.jpg"
+            ];
+
+            const mainImage = document.getElementById('gallery-main-image');
+            const track = document.getElementById('thumbnails-track');
+            let currentIndex = 0;
+            let autoScrollInterval;
+
+            // Render Thumbnails
+            images.forEach((src, index) => {
+                const thumb = document.createElement('div');
+                thumb.className = `flex-shrink-0 w-24 h-16 md:w-32 md:h-20 rounded-md overflow-hidden cursor-pointer border-2 transition-all duration-200 ${index === 0 ? 'border-gray-900 ring-2 ring-gray-900' : 'border-transparent opacity-70 hover:opacity-100'}`;
+                thumb.innerHTML = `<img src="${src}" class="w-full h-full object-cover">`;
+                thumb.onclick = () => setMainImage(index);
+                track.appendChild(thumb);
+            });
+
+            const thumbnails = track.children;
+
+            function setMainImage(index) {
+                currentIndex = index;
+                
+                // Update Main Image
+                mainImage.style.opacity = '0.5';
+                setTimeout(() => {
+                    mainImage.src = images[index];
+                    mainImage.style.opacity = '1';
+                }, 200);
+
+                // Update Active Thumbnail
+                for (let i = 0; i < thumbnails.length; i++) {
+                    if (i === index) {
+                        thumbnails[i].className = "flex-shrink-0 w-24 h-16 md:w-32 md:h-20 rounded-md overflow-hidden cursor-pointer border-2 transition-all duration-200 border-gray-900 ring-2 ring-gray-900 scale-105";
+                        thumbnails[i].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+                    } else {
+                        thumbnails[i].className = "flex-shrink-0 w-24 h-16 md:w-32 md:h-20 rounded-md overflow-hidden cursor-pointer border-2 transition-all duration-200 border-transparent opacity-70 hover:opacity-100";
+                    }
+                }
+                
+                resetAutoScroll();
+            }
+
+            function nextImage() {
+                let nextIndex = (currentIndex + 1) % images.length;
+                setMainImage(nextIndex);
+            }
+
+            function prevImage() {
+                let prevIndex = (currentIndex - 1 + images.length) % images.length;
+                setMainImage(prevIndex);
+            }
+
+            // Auto Scroll
+            function startAutoScroll() {
+                autoScrollInterval = setInterval(nextImage, 3000);
+            }
+
+            function resetAutoScroll() {
+                clearInterval(autoScrollInterval);
+                startAutoScroll();
+            }
+
+            // Event Listeners
+            document.getElementById('main-next').onclick = nextImage;
+            document.getElementById('main-prev').onclick = prevImage;
+            
+            document.getElementById('thumb-next').onclick = () => {
+                track.scrollBy({ left: 200, behavior: 'smooth' });
+            };
+            document.getElementById('thumb-prev').onclick = () => {
+                track.scrollBy({ left: -200, behavior: 'smooth' });
+            };
+
+            // Start
+            startAutoScroll();
+          });
+        </script>
+        
+        <style>
+          .scrollbar-hide::-webkit-scrollbar { display: none; }
+          .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+        </style>
+      </section>
+
+      <!-- Giving Section -->
+      <section id="giving" class="py-20 bg-accent text-white text-center">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 class="text-3xl md:text-4xl font-serif font-bold mb-6">Giving</h2>
+          <p class="text-xl text-white/90 mb-10 leading-relaxed">
+            "Each one must give as he has decided in his heart, not reluctantly or under compulsion, for God loves a cheerful giver." — 2 Corinthians 9:7
+          </p>
+          <div class="flex flex-col sm:flex-row justify-center gap-6">
+            <a href="#" class="bg-white text-accent hover:bg-gray-100 px-8 py-4 rounded-full font-bold text-lg transition-colors shadow-lg">
+              Give Online
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="py-20 bg-white">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-serif font-bold text-gray-900 mb-8">Contact Us</h2>
+            <p class="text-gray-600 mb-8">Have questions? We'd love to hear from you.</p>
+            
+            <form id="contact-form" class="space-y-4 max-w-xl mx-auto text-left">
+              <div>
+                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                <input type="text" id="name" name="name" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-accent focus:border-accent outline-none transition-colors">
+              </div>
+              <div>
+                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                <input type="email" id="email" name="email" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-accent focus:border-accent outline-none transition-colors">
+              </div>
+              <div>
+                <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                <textarea id="message" name="message" rows="4" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-accent focus:border-accent outline-none transition-colors"></textarea>
+              </div>
+              <button type="submit" class="w-full bg-accent hover:bg-accent-hover text-white font-bold py-3 px-6 rounded-lg transition-colors shadow-md">
+                Send Message
+              </button>
+            </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-4 gap-8 mb-8">
+          <div class="col-span-1 md:col-span-2">
+            <a href="#" class="flex items-center gap-2 mb-4">
+               <img src="/images/logo.svg" alt="Logo" class="h-8 w-auto brightness-0 invert">
+               <span class="font-serif font-bold text-xl text-white">West Boca Baptist</span>
+            </a>
+            <p class="mb-4 max-w-sm">Glorifying God by making disciples of all nations. Join us as we grow in faith and serve our community.</p>
+          </div>
+          <div>
+            <h4 class="text-white font-bold mb-4">Service Times</h4>
+            <ul class="space-y-2 text-sm">
+              <li>Sunday Bible Study: 9:30 AM</li>
+              <li>Sunday Worship: 11:00 AM</li>
+              <li>Wednesday Prayer: 6:30 PM</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-white font-bold mb-4">Connect</h4>
+            <ul class="space-y-2 text-sm">
+              <li><a href="#" class="hover:text-white transition-colors">Facebook</a></li>
+              <li><a href="#" class="hover:text-white transition-colors">Instagram</a></li>
+              <li><a href="#" class="hover:text-white transition-colors">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm">
+          <p>&copy; 2024 West Boca Baptist Church. All rights reserved.</p>
+          <p class="mt-2 md:mt-0">7500 North State Road 7, Coconut Creek, FL 33073</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+      <span class="lightbox-close">&times;</span>
+      <img class="lightbox-img" id="lightbox-img" src="">
+    </div>
+
+    <script type="module" src="/src/script.js"></script>
+  </body>
+</html>
