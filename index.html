@@ -25,18 +25,18 @@
           </div>
 
           <!-- Desktop Navigation -->
-          <nav class="hidden md:flex space-x-8 items-center">
+          <nav class="hidden lg:flex space-x-8 items-center">
             <a href="#home" class="text-xs font-bold tracking-widest text-gray-600 hover:text-accent transition-colors uppercase">Home</a>
             <a href="#about" class="text-xs font-bold tracking-widest text-gray-600 hover:text-accent transition-colors uppercase">About</a>
             <a href="#services" class="text-xs font-bold tracking-widest text-gray-600 hover:text-accent transition-colors uppercase">Services</a>
             <a href="#gallery" class="text-xs font-bold tracking-widest text-gray-600 hover:text-accent transition-colors uppercase">Gallery</a>
             <a href="#giving" class="text-xs font-bold tracking-widest text-gray-600 hover:text-accent transition-colors uppercase">Giving</a>
             <a href="#contact" class="text-xs font-bold tracking-widest text-gray-600 hover:text-accent transition-colors uppercase">Contact</a>
-            <a href="#visit" class="bg-accent hover:bg-accent-hover text-white text-sm px-6 py-2 rounded-full font-medium transition-colors shadow-md hover:shadow-lg transform hover:-translate-y-0.5 duration-200">Visit Us</a>
+            <a href="#contact" class="bg-accent hover:bg-accent-hover text-white text-sm px-6 py-2 rounded-full font-medium transition-colors shadow-md hover:shadow-lg transform hover:-translate-y-0.5 duration-200">Visit Us</a>
           </nav>
 
           <!-- Mobile Menu Button -->
-          <div class="md:hidden flex items-center">
+          <div class="lg:hidden flex items-center">
             <button id="menu-btn" class="text-gray-600 hover:text-gray-900 focus:outline-none p-2">
               <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -47,7 +47,7 @@
       </div>
 
       <!-- Mobile Menu -->
-      <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-lg">
+      <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 absolute w-full shadow-lg">
         <div class="px-4 pt-2 pb-6 space-y-2">
           <a href="#home" class="block px-3 py-3 text-sm font-bold tracking-widest text-gray-700 hover:text-accent hover:bg-gray-50 rounded-md uppercase">Home</a>
           <a href="#about" class="block px-3 py-3 text-sm font-bold tracking-widest text-gray-700 hover:text-accent hover:bg-gray-50 rounded-md uppercase">About</a>
@@ -55,7 +55,7 @@
           <a href="#gallery" class="block px-3 py-3 text-sm font-bold tracking-widest text-gray-700 hover:text-accent hover:bg-gray-50 rounded-md uppercase">Gallery</a>
           <a href="#giving" class="block px-3 py-3 text-sm font-bold tracking-widest text-gray-700 hover:text-accent hover:bg-gray-50 rounded-md uppercase">Giving</a>
           <a href="#contact" class="block px-3 py-3 text-sm font-bold tracking-widest text-gray-700 hover:text-accent hover:bg-gray-50 rounded-md uppercase">Contact</a>
-          <a href="#visit" class="block px-3 py-3 text-base font-medium text-white bg-accent rounded-md mt-4 text-center">Visit Us</a>
+          <a href="#contact" class="block px-3 py-3 text-base font-medium text-white bg-accent rounded-md mt-4 text-center">Visit Us</a>
         </div>
       </div>
     </header>
@@ -110,7 +110,7 @@
 
             <!-- Button -->
             <div>
-              <a href="#contact" class="inline-flex items-center gap-3 bg-[#6b705c] hover:bg-[#585c4b] text-white px-8 py-3.5 rounded-full font-medium text-base transition-all shadow-lg hover:shadow-xl">
+              <a href="mailto:westbocabaptistchurch@gmail.com" class="inline-flex items-center gap-3 bg-[#6b705c] hover:bg-[#585c4b] text-white px-8 py-3.5 rounded-full font-medium text-base transition-all shadow-lg hover:shadow-xl">
                 <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
@@ -136,11 +136,19 @@
               </p>
               
               <!-- Quote Box -->
-              <div class="bg-beige-light p-8 rounded-3xl border border-gray-100">
-                <p class="text-xl font-serif italic text-gray-700 mb-4 leading-relaxed">
-                  "If you confess with your mouth, 'Jesus is Lord,' and believe in your heart that God raised him from the dead, you will be saved."
-                </p>
-                <p class="text-xs font-bold tracking-widest text-gray-500 uppercase">Romans 10:9 (CSB)</p>
+              <div class="relative p-12 md:p-16 rounded-3xl border border-gray-100 overflow-hidden group min-h-[400px] flex flex-col justify-center">
+                <!-- Background Image -->
+                <div class="absolute inset-0 z-0">
+                  <img src="https://raw.githubusercontent.com/boreilly12019/imageschurch/refs/heads/main/page%20photo.jpg" alt="Background" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                  <div class="absolute inset-0 bg-black/50"></div>
+                </div>
+                
+                <div class="relative z-10 text-center">
+                  <p class="text-2xl md:text-3xl font-serif italic text-white mb-6 leading-relaxed">
+                    "If you confess with your mouth, 'Jesus is Lord,' and believe in your heart that God raised him from the dead, you will be saved."
+                  </p>
+                  <p class="text-sm font-bold tracking-widest text-white/90 uppercase">Romans 10:9 (CSB)</p>
+                </div>
               </div>
             </div>
 
@@ -358,13 +366,18 @@
                 for (let i = 0; i < thumbnails.length; i++) {
                     if (i === index) {
                         thumbnails[i].className = "flex-shrink-0 w-24 h-16 md:w-32 md:h-20 rounded-md overflow-hidden cursor-pointer border-2 transition-all duration-200 border-gray-900 ring-2 ring-gray-900 scale-105";
-                        thumbnails[i].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+                        
+                        // Manual scroll to center thumbnail without scrolling the page
+                        const thumb = thumbnails[i];
+                        const thumbRect = thumb.getBoundingClientRect();
+                        const trackRect = track.getBoundingClientRect();
+                        const offset = thumbRect.left - trackRect.left;
+                        const targetScrollLeft = track.scrollLeft + offset - (track.clientWidth / 2) + (thumb.clientWidth / 2);
+                        track.scrollTo({ left: targetScrollLeft, behavior: 'smooth' });
                     } else {
                         thumbnails[i].className = "flex-shrink-0 w-24 h-16 md:w-32 md:h-20 rounded-md overflow-hidden cursor-pointer border-2 transition-all duration-200 border-transparent opacity-70 hover:opacity-100";
                     }
                 }
-                
-                resetAutoScroll();
             }
 
             function nextImage() {
@@ -377,16 +390,6 @@
                 setMainImage(prevIndex);
             }
 
-            // Auto Scroll
-            function startAutoScroll() {
-                autoScrollInterval = setInterval(nextImage, 3000);
-            }
-
-            function resetAutoScroll() {
-                clearInterval(autoScrollInterval);
-                startAutoScroll();
-            }
-
             // Event Listeners
             document.getElementById('main-next').onclick = nextImage;
             document.getElementById('main-prev').onclick = prevImage;
@@ -397,9 +400,6 @@
             document.getElementById('thumb-prev').onclick = () => {
                 track.scrollBy({ left: -200, behavior: 'smooth' });
             };
-
-            // Start
-            startAutoScroll();
           });
         </script>
         
@@ -410,78 +410,213 @@
       </section>
 
       <!-- Giving Section -->
-      <section id="giving" class="py-20 bg-accent text-white text-center">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 class="text-3xl md:text-4xl font-serif font-bold mb-6">Giving</h2>
-          <p class="text-xl text-white/90 mb-10 leading-relaxed">
-            "Each one must give as he has decided in his heart, not reluctantly or under compulsion, for God loves a cheerful giver." — 2 Corinthians 9:7
-          </p>
-          <div class="flex flex-col sm:flex-row justify-center gap-6">
-            <a href="#" class="bg-white text-accent hover:bg-gray-100 px-8 py-4 rounded-full font-bold text-lg transition-colors shadow-lg">
-              Give Online
-            </a>
+      <section id="giving" class="py-20 bg-[#F5F5F0]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="bg-white rounded-[2.5rem] p-8 md:p-16 shadow-sm flex flex-col md:flex-row gap-12 items-center relative overflow-hidden">
+            
+            <!-- Decorative background heart (faded) -->
+            <div class="absolute -top-10 -left-10 text-[#F5F5F0] opacity-50 pointer-events-none">
+                <svg width="200" height="200" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+            </div>
+
+            <!-- Left Content -->
+            <div class="flex-1 relative z-10 text-left">
+              <div class="w-12 h-12 bg-[#F5F5F0] rounded-full flex items-center justify-center mb-8">
+                <svg class="w-6 h-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
+              </div>
+              
+              <h2 class="text-4xl md:text-5xl font-serif text-gray-900 leading-tight mb-6">
+                Thank you for supporting the Gospel work of Jesus.
+              </h2>
+              
+              <p class="text-gray-600 text-lg leading-relaxed mb-8">
+                Your generous support helps us extend the love of Jesus, care for those in need, and sustain the ministries God has entrusted to us. Together, we are sharing the gospel of Christ and making a real difference in our community.
+              </p>
+
+              <a href="https://west-boca-baptist-church-520748.churchcenter.com/giving" class="inline-flex items-center justify-center bg-[#5A5A40] hover:bg-[#4a4a3a] text-white font-bold py-4 px-8 rounded-full transition-colors shadow-lg group">
+                Give Online Now
+                <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+              </a>
+            </div>
+
+            <!-- Right Content (QR Code) -->
+            <div class="flex-1 w-full max-w-md flex justify-center">
+              <div class="bg-[#F5F5F0] rounded-[2rem] border-2 border-dashed border-gray-300 p-8 md:p-12 text-center relative w-full max-w-sm">
+                <div class="bg-white rounded-3xl shadow-sm inline-block mb-8 overflow-hidden">
+                  <!-- QR Code Placeholder -->
+                  <img src="https://raw.githubusercontent.com/boreilly12019/imageschurch/refs/heads/main/qr%20code.webp" alt="Scan to Give" class="w-64 h-64 md:w-80 md:h-80 object-cover">
+                </div>
+                
+                <h3 class="font-serif text-2xl text-gray-900 mb-3">Scan to Give</h3>
+                <p class="text-sm text-gray-500 max-w-xs mx-auto leading-relaxed">
+                  Use your phone's camera to support the work Jesus is doing through His church.
+                </p>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
 
       <!-- Contact Section -->
       <section id="contact" class="py-20 bg-white">
-        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl md:text-4xl font-serif font-bold text-gray-900 mb-8">Contact Us</h2>
-            <p class="text-gray-600 mb-8">Have questions? We'd love to hear from you.</p>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid md:grid-cols-2 gap-16 items-start">
             
-            <form id="contact-form" class="space-y-4 max-w-xl mx-auto text-left">
+            <!-- Left Column: Contact Info -->
+            <div class="space-y-12">
               <div>
-                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
-                <input type="text" id="name" name="name" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-accent focus:border-accent outline-none transition-colors">
+                <p class="text-xs font-bold tracking-widest text-gray-500 uppercase mb-4">Get in touch</p>
+                <h2 class="text-5xl font-serif text-gray-900 leading-tight">Better yet, see us in person!</h2>
               </div>
-              <div>
-                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
-                <input type="email" id="email" name="email" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-accent focus:border-accent outline-none transition-colors">
+
+              <div class="space-y-8">
+                <!-- Visit Us -->
+                <div class="flex gap-4">
+                  <div class="w-12 h-12 bg-[#F5F5F0] rounded-xl flex items-center justify-center flex-shrink-0 text-gray-700">
+                    <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                  </div>
+                  <div>
+                    <h3 class="font-serif text-xl text-gray-900 mb-1">Visit Us</h3>
+                    <p class="text-gray-600">7500 N SR7, Coconut Creek, Fl 33073</p>
+                  </div>
+                </div>
+
+                <!-- Call Us -->
+                <div class="flex gap-4">
+                  <div class="w-12 h-12 bg-[#F5F5F0] rounded-xl flex items-center justify-center flex-shrink-0 text-gray-700">
+                    <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+                  </div>
+                  <div>
+                    <h3 class="font-serif text-xl text-gray-900 mb-1">Call Us</h3>
+                    <p class="text-gray-600">561-990-3070</p>
+                  </div>
+                </div>
+
+                <!-- Email Us -->
+                <div class="flex gap-4">
+                  <div class="w-12 h-12 bg-[#F5F5F0] rounded-xl flex items-center justify-center flex-shrink-0 text-gray-700">
+                    <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                  </div>
+                  <div>
+                    <h3 class="font-serif text-xl text-gray-900 mb-1">Email Us</h3>
+                    <p class="text-gray-600">westbocabaptistchurch@gmail.com</p>
+                  </div>
+                </div>
               </div>
-              <div>
-                <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
-                <textarea id="message" name="message" rows="4" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-accent focus:border-accent outline-none transition-colors"></textarea>
-              </div>
-              <button type="submit" class="w-full bg-accent hover:bg-accent-hover text-white font-bold py-3 px-6 rounded-lg transition-colors shadow-md">
-                Send Message
-              </button>
-            </form>
+            </div>
+
+            <!-- Right Column: Form -->
+            <div class="bg-[#F5F5F0] rounded-[2rem] p-8 md:p-12 shadow-sm">
+              <h3 class="text-3xl font-serif text-gray-900 mb-8">Drop us a line!</h3>
+              
+              <form class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <label class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Name</label>
+                    <input type="text" placeholder="Your Name" class="w-full px-4 py-3 rounded-lg border-none bg-white focus:ring-2 focus:ring-[#5A5A40] outline-none transition-shadow">
+                  </div>
+                  <div>
+                    <label class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Email</label>
+                    <input type="email" placeholder="Your Email" class="w-full px-4 py-3 rounded-lg border-none bg-white focus:ring-2 focus:ring-[#5A5A40] outline-none transition-shadow">
+                  </div>
+                </div>
+
+                <div>
+                  <label class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">How did you hear about us?</label>
+                  <input type="text" placeholder="Friend, Social Media, etc." class="w-full px-4 py-3 rounded-lg border-none bg-white focus:ring-2 focus:ring-[#5A5A40] outline-none transition-shadow">
+                </div>
+
+                <div>
+                  <label class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Message</label>
+                  <textarea rows="4" placeholder="How can we help you?" class="w-full px-4 py-3 rounded-lg border-none bg-white focus:ring-2 focus:ring-[#5A5A40] outline-none transition-shadow resize-none"></textarea>
+                </div>
+
+                <div>
+                  <label class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Attachments</label>
+                  <div class="border-2 border-dashed border-gray-300 rounded-xl bg-white p-8 text-center cursor-pointer hover:border-gray-400 transition-colors group">
+                    <div class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-gray-200 transition-colors">
+                      <svg class="w-5 h-5 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" /></svg>
+                    </div>
+                    <p class="text-sm font-medium text-gray-900">Click or drag to upload</p>
+                    <p class="text-xs text-gray-500 mt-1">PDF, JPG, PNG (MAX 10MB)</p>
+                  </div>
+                </div>
+
+                <button type="submit" class="w-full bg-[#5A5A40] hover:bg-[#4a4a3a] text-white font-bold py-4 rounded-full transition-colors shadow-lg flex items-center justify-center gap-2 mt-8">
+                  Send Message
+                  <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" /></svg>
+                </button>
+
+                <p class="text-[10px] text-gray-400 text-center mt-4">
+                  This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy" class="underline">Privacy Policy</a> and <a href="https://policies.google.com/terms" class="underline">Terms of Service</a> apply.
+                </p>
+              </form>
+            </div>
+          </div>
         </div>
       </section>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800">
+    <footer class="bg-[#1a1a1a] text-gray-400 py-16 border-t border-gray-800">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid md:grid-cols-4 gap-8 mb-8">
-          <div class="col-span-1 md:col-span-2">
-            <a href="#" class="flex items-center gap-2 mb-4">
-               <img src="/images/logo.svg" alt="Logo" class="h-8 w-auto brightness-0 invert">
-               <span class="font-serif font-bold text-xl text-white">West Boca Baptist</span>
-            </a>
-            <p class="mb-4 max-w-sm">Glorifying God by making disciples of all nations. Join us as we grow in faith and serve our community.</p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
+          
+          <!-- Column 1: Logo & Info -->
+          <div class="space-y-6">
+            <img src="https://github.com/boreilly12019/imageschurch/blob/main/qt=q_95.webp?raw=true" alt="West Boca Baptist Church" class="h-16 w-auto">
+            <p class="text-gray-400 leading-relaxed max-w-sm">
+              To connect people with Jesus, strengthen families, and make disciples. Grounded in the Holy Scriptures and the historic Baptist faith.
+            </p>
+            <div class="flex space-x-4">
+              <!-- Facebook -->
+              <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gray-700 transition-colors text-white group">
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+              </a>
+              <!-- Instagram -->
+              <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gray-700 transition-colors text-white group">
+                <svg class="w-5 h-5 stroke-current" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+              </a>
+              <!-- YouTube -->
+              <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gray-700 transition-colors text-white group">
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="#1a1a1a"></polygon></svg>
+              </a>
+            </div>
           </div>
+
+          <!-- Column 2: Quick Links -->
           <div>
-            <h4 class="text-white font-bold mb-4">Service Times</h4>
-            <ul class="space-y-2 text-sm">
-              <li>Sunday Bible Study: 9:30 AM</li>
-              <li>Sunday Worship: 11:00 AM</li>
-              <li>Wednesday Prayer: 6:30 PM</li>
+            <h3 class="text-white text-2xl font-serif mb-6">Quick Links</h3>
+            <ul class="space-y-4">
+              <li><a href="#" class="hover:text-white transition-colors">Home</a></li>
+              <li><a href="#" class="hover:text-white transition-colors">Our Mission</a></li>
+              <li><a href="#" class="hover:text-white transition-colors">Service Times</a></li>
+              <li><a href="#" class="hover:text-white transition-colors">Giving</a></li>
             </ul>
           </div>
+
+          <!-- Column 3: Newsletter -->
           <div>
-            <h4 class="text-white font-bold mb-4">Connect</h4>
-            <ul class="space-y-2 text-sm">
-              <li><a href="#" class="hover:text-white transition-colors">Facebook</a></li>
-              <li><a href="#" class="hover:text-white transition-colors">Instagram</a></li>
-              <li><a href="#" class="hover:text-white transition-colors">YouTube</a></li>
-            </ul>
+            <h3 class="text-white text-2xl font-serif mb-6">Join our Newsletter</h3>
+            <p class="text-gray-400 mb-6">Stay informed about our latest events and news.</p>
+            <form class="flex items-center bg-gray-800 rounded-full p-1 pl-4 focus-within:ring-2 focus-within:ring-gray-600 border border-gray-700">
+              <input type="email" placeholder="Email address" class="bg-transparent border-none text-white placeholder-gray-500 focus:ring-0 w-full outline-none h-10">
+              <button type="submit" class="bg-[#5a5a4a] hover:bg-[#6a6a5a] text-white px-6 py-2 rounded-full font-medium transition-colors ml-2 h-10 flex items-center">
+                Join
+              </button>
+            </form>
           </div>
+
         </div>
-        <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm">
-          <p>&copy; 2024 West Boca Baptist Church. All rights reserved.</p>
-          <p class="mt-2 md:mt-0">7500 North State Road 7, Coconut Creek, FL 33073</p>
+
+        <!-- Bottom Bar -->
+        <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs tracking-wider uppercase text-gray-500">
+          <p>&copy; 2026 WEST BOCA BAPTIST CHURCH - ALL RIGHTS RESERVED.</p>
+          <div class="flex space-x-8 mt-4 md:mt-0">
+            <a href="#" class="hover:text-gray-300 transition-colors">PRIVACY POLICY</a>
+            <a href="#" class="hover:text-gray-300 transition-colors">TERMS OF SERVICE</a>
+          </div>
         </div>
       </div>
     </footer>
